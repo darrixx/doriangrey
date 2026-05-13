@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доріан Грей</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cal+Sans&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+<script src="./script.js"></script>
+</head>
+<body>
+    <div id="all-content">
+    <header>
+        <h1>Доріан Грей</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-author">Автор</a></li>
+                <li><a href="#heroes">Герої</a></li>
+                <li><a href="#plot">Сюжет</a></li>
+                <li><a href="#quote">Цитата</a></li>
+                <li><a href="#problems">Проблематика</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="about-author">
+            <img id="author-photo" src="./images/photo1.jpg" alt="Оскар Уайлд" onclick="change()">
+            <div class="text-block">
+                <h2>Оскар Уайлд</h2>
+                <p id="true-author-name">справжнє ім'я — О́скар Фі́нґал О'Фла́герті Вілс Вайлд</p>
+            </div>
+            <div class="text-block">
+                <h3>Роки життя</h3>
+                <p class="years">1854 — 1900</p>
+            </div>
+            <div class="text-block">
+                <p class="information">Ірландський англомовний поет, драматург, прозаїк, есеїст, представник літературно-художнього напряму естетизму.</p>
+            </div>
+            <div class="text-block">
+                <h3>Інші твори</h3>
+                <ul>
+                    <li><a href="https://uk.wikipedia.org/wiki/%D0%A9%D0%B0%D1%81%D0%BB%D0%B8%D0%B2%D0%B8%D0%B9_%D0%BF%D1%80%D0%B8%D0%BD%D1%86_%D1%82%D0%B0_%D1%96%D0%BD%D1%88%D1%96_%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8">Щасливий принц та інші казки</a></li>
+                    <li><a href="https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%B2%D0%B8%D0%B9_%D0%B1%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D1%87%D0%BE%D0%BA">Гранатовий будиночок</a></li>
+                    <li><a href="https://uk.wikipedia.org/wiki/%D0%94%D1%83%D1%88%D0%B0_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B8_%D0%B7%D0%B0_%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%BC%D1%83">Душа людини за соціалізму</a></li>
+                    <li><a href="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D1%8F%D0%BB%D0%BE_%D0%BB%D0%B5%D0%B4%D1%96_%D0%92%D1%96%D0%BD%D0%B4%D0%B5%D1%80%D0%BC%D1%96%D1%80">Віяло леді Віндермір</a></li>
+                    <li><a href="https://uk.wikipedia.org/wiki/%D0%86%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%BA_(%D0%BF%27%D1%94%D1%81%D0%B0)">Ідеальний чоловік</a></li>
+                </ul>
+            </div>
+        </aside>
+        <selection id="about-work">
+            <div class="content-text-block" id="work-year">
+                <h2>Рік написання</h2>
+                <p class="years">1890</p>
+            </div>
+            <div class="content-text-block" id="heroes">
+                <h2>Герої твору</h2>
+                <ul>
+                    <li>Доріан Грей – головний герой, якого називають «Чарівним Принцом». Цінував у житті мистецтво, красу, насолоду, розкіш.</li>
+                    <li>Художник Безіл Голлуорд – автор живописного портрета головного героя.</li>
+                    <li>Лорд Генрі Воттон – аристократ, цинічний та скептичний лорд.</li>
+                    <li>Кохана Доріана Сибіла Вейн – актриса.</li>
+                    <li>Матір Сибіл та брат Джеймс.</li>
+                    <li>Хімік Кемпбел.</li>
+                </ul>
+            </div>
+            <div class="content-text-block" id="plot">
+                <h2>Сюжет</h2>
+                <div class="text-block">
+                    <h3>Експозиція</h3>
+                    <p>Знайомство з молодим і надзвичайно вродливим Доріаном Греєм, художником Безіл Голуорд та лордом Лорд Генрі Воттон. Безіл малює портрет Доріана, а лорд Генрі починає впливати на його світогляд своїми ідеями про культ молодості та насолоди.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Зав’язка</h3>
+                    <p>Доріан, захоплений власною красою, висловлює бажання назавжди залишитися молодим, а щоб старів і змінювався лише його портрет. Це бажання здійснюється.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Розвиток дії</h3>
+                    <p>Доріан веде аморальне життя, шукаючи лише задоволення, руйнуючи долі інших людей. Водночас його портрет поступово спотворюється, відображаючи всі його гріхи й моральне падіння, тоді як сам він зовні залишається молодим і красивим.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Кульмінація</h3>
+                    <p>Після того як Безіл бачить спотворений портрет і намагається вплинути на Доріана, той у гніві вбиває художника. Це стає вершиною його духовного занепаду.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Розв’язка</h3>
+                    <p>Доріан вирішує знищити портрет, сподіваючись позбутися свого минулого й провини. Але, вдаривши ножем у полотно, він убиває самого себе: слуги знаходять старого потворного чоловіка, а портрет знову стає прекрасним і молодим.</p>
+                </div>
+            </div>
+            <div class="content-text-block" id="quote">
+                <h2>Цитата</h2>
+                <p id="quote-text">Кожен із нас носить у собі і рай, і пекло</p>
+            </div>
+            <div class="content-text-block" id="problems">
+                <h2>Проблематика</h2>
+                <p id="problem-text">Співвідношення насолоди й моралі, роль і вплив краси в житті.</p>
+            </div>
+        </selection>
+    </main>
+    <footer>
+        <p>© Доценко Дар'я, учениця 10-го класу Харківського ліцею №46, 2026</p>
+    </footer>
+    </div>
+</body>
+</html>
